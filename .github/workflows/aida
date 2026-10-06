@@ -1,0 +1,12 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say_hello:
+  steps:
+    - name: Checkout repository
+      uses: actions/chechout@v3
+
+    - name: Hello step
+    run: echo "Hello from Aida"
